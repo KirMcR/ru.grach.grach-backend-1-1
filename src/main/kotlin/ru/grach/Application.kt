@@ -10,7 +10,7 @@ import ru.grach.plugins.*
 fun main() {
     Database.connect("jdbc:postgresql://localhost:5432/Grach1.0", driver = "org.postgresql.Driver",
         user ="postgres", password="qwertyu" )
-    embeddedServer(Netty, port = 8080, host = "0.0.0.0") {
+    embeddedServer(Netty, port = System.getenv("PORT").toInt()) {
         configureRouting()
         configureLoginRouting()
         configureRegisterRouting()

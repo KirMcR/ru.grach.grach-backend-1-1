@@ -9,6 +9,7 @@ import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import kotlin.test.*
 import io.ktor.server.testing.*
+import org.junit.Test
 import ru.grach.plugins.*
 
 class ApplicationTest {
