@@ -36,6 +36,7 @@ dependencies {
     implementation("org.jetbrains.exposed:exposed-jdbc:$exposed_version")
 
     implementation("org.postgresql:postgresql:42.5.0")
+    implementation("com.zaxxer:HikariCP:5.0.1")
 
     implementation("io.ktor:ktor-client-content-negotiation:$ktor_version")
     implementation("io.ktor:ktor-serialization-kotlinx-json:$ktor_version")
